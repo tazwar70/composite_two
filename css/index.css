@@ -44,12 +44,11 @@ h3{
     background: #40c9a2;
 }
 .product-img{
-    height: auto;
-    width: 80%;
+    height: 300px;
+    width: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%
 }
 .product-field{
     width: 40%;
@@ -59,7 +58,7 @@ h3{
     font-size: 2em;
 }
 #left-fixed{
-    position: absolute;
+    flex: 50%;
     width: 20%;
 }
 .search-field{
@@ -195,6 +194,9 @@ legend{
     border-radius: 7px;
     padding: 1em;
 }
+.fieldset-container{
+    display: flex;
+}
 
 
 @media only screen and (max-width: 600px) {
@@ -218,6 +220,7 @@ legend{
         font-size: 1.2em;
         color: #333;
         background: #2f9c95;
+        flex: 50%;
     }
     main{
         position: absolute;
@@ -254,7 +257,8 @@ legend{
         font-size: 2em;
     }
     #left-fixed{
-        position: absolute;
+        display: flex;
+        position: relative;
         width: 20%;
     }
     .search-field{
